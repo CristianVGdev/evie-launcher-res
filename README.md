@@ -7,7 +7,7 @@ Bienvenido al repositorio público de **Evie Launcher** en su versión parcheada
 Actualmente, este repositorio contiene únicamente los **recursos (`res`) extraídos del APK original** de Evie Launcher, como un punto de partida para futuras actualizaciones.
 
 ### ⚠️ **Estado del Proyecto**
-- Esta versión **no es instalable** en su estado actual. 
+- Esta versión **puede ser instalable** en su estado actual en android +14. 
 - Los recursos están organizados para facilitar el análisis, modificación y modernización del launcher.
 - Se planea una migración futura a **Kotlin** y la integración de nuevas características.
 
