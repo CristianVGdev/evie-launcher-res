@@ -23,9 +23,12 @@ Evie Launcher fue descontinuado y dejó de recibir soporte desde 2019. Este repo
 Actualmente, existen múltiples versiones parcheadas de Evie circulando por la red, algunas de ellas con modificaciones no verificadas.  
 Para garantizar la seguridad y transparencia, **este repositorio se establece como la fuente central y pública** para cualquier actualización del proyecto.
 
-
 ## ⚠️ **Aviso de Responsabilidad**
-Este repositorio es la **única fuente oficial** de Evie Launcher parcheado. **No me hago responsable** por versiones que salgan fuera de este repositorio, forks sin revisión o modificaciones no aprobadas.
+Este repositorio es la **única fuente oficial** de Evie Launcher Parcheado. No me hago responsable por versiones que salgan fuera de este repositorio, forks no revisados o modificaciones no aprobadas. 
+
+Tampoco me hago responsable al 100% del uso de esta versión oficial; aunque me comprometo a revisar constantemente el código para evitar fugas de datos, malware y vulnerabilidades, la responsabilidad final de su uso recae en cada usuario. 
+
+No puedo garantizar al 100% la ausencia de errores, pero mi intención es que el código sea lo más seguro y limpio posible. Soy humano y puedo cometer errores, pero estaré atento a recibir reportes y corregirlos lo antes posible. Si decides compilar o utilizar versiones no oficiales, eso queda completamente bajo tu propio riesgo.
 
 ## 🔍 **Verificación de seguridad**
 Cada actualización es revisada para:
