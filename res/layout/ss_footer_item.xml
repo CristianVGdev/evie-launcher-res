@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ss_base_and_half_spacing" android:layout_marginBottom="@dimen/ss_base_and_half_spacing"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/SSFooterTextAppearance" android:gravity="center" android:id="@id/footer_powered_by_evie_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ss_powered_by_evie" />
+    <androidx.legacy.widget.Space android:layout_width="2.0sp" android:layout_height="wrap_content" />
+    <TextView android:textAppearance="@style/SSFooterTextAppearance" android:gravity="center" android:id="@id/footer_weather_by_yahoo_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ss_legal_weather_provided_by" />
+</LinearLayout>

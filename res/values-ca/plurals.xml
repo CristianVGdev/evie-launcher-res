@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="number_of_items_selected">
+        <item quantity="other">%1$d seleccionat</item>
+        <item quantity="one">%1$d seleccionat</item>
+    </plurals>
+    <plurals name="number_of_reviews">
+        <item quantity="other">%1$d ressenyes</item>
+        <item quantity="one">%1$d ressenya</item>
+    </plurals>
+</resources>

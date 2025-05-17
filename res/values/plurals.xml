@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="number_of_items_selected">
+        <item quantity="other">%1$d selected</item>
+        <item quantity="zero">%1$d selected</item>
+        <item quantity="one">%1$d selected</item>
+    </plurals>
+    <plurals name="number_of_reviews">
+        <item quantity="other">%1$d reviews</item>
+        <item quantity="zero">no reviews</item>
+        <item quantity="one">%1$d review</item>
+    </plurals>
+    <plurals name="ss_follow_count">
+        <item quantity="other">Follow %d topics</item>
+        <item quantity="one">Follow 1 topic</item>
+    </plurals>
+    <plurals name="ss_number_of_reviews">
+        <item quantity="other">%1$d Yelp reviews</item>
+        <item quantity="zero">no Yelp reviews</item>
+        <item quantity="one">%1$d Yelp review</item>
+    </plurals>
+</resources>

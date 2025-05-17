@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/content" android:background="@color/dark_theme_bg" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="15.0sp" android:textColor="#ffeeeeee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ss_margin_side" android:text="@string/ss_related_videos_up_next" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/SSTextStyleMedium" />
+    <androidx.appcompat.widget.SwitchCompat android:id="@id/autoplay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ss_margin_side" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:switchMinWidth="37.0dip" app:theme="@style/SwitchStyle" />
+    <TextView android:textSize="15.0sp" android:textColor="#ff7f7f7f" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ss_margin_side" android:text="@string/ss_related_videos_autoplay" android:layout_toLeftOf="@id/autoplay" android:layout_centerVertical="true" style="@style/SSTextStyleRegular" />
+</RelativeLayout>

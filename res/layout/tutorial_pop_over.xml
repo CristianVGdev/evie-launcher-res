@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="@dimen/tutorial_popover_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="right" android:orientation="vertical" android:id="@id/container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView android:layout_gravity="center" android:id="@id/card_view" android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@color/main_theme_sky_blue" app:cardCornerRadius="2.0dip" app:cardElevation="0.0dip" app:cardMaxElevation="0.0dip" app:cardPreventCornerOverlap="false" app:cardUseCompatPadding="true"
+          xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+            <RelativeLayout android:id="@id/child_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include layout="@layout/close_button" />
+                <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/header_main_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="5.0dip" android:layout_toLeftOf="@id/close_button" android:layout_alignParentTop="true" android:textAllCaps="true" android:fontFamily="sans-serif-light" />
+                <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:id="@id/text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:layout_below="@id/header_main_text" android:fontFamily="sans-serif-light" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <ImageView android:id="@id/arrow" android:layout_width="@dimen/popover_arrow_width" android:layout_height="@dimen/popover_arrow_height" android:layout_marginRight="10.0dip" />
+    </LinearLayout>
+</FrameLayout>

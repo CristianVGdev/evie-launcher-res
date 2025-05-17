@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@drawable/tile_header_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ss_half_spacing" style="@style/SSTileStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/SSRailTitleTextAppearance" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ss_trending_section_title" style="@style/SSRailTitleStyle" />
+    <TextView android:textAppearance="@style/SSRailSideTitleTextAppearance" android:gravity="right" android:id="@id/link" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/ss_personalize_link" android:layout_weight="1.0" style="@style/SSRailTitleStyle" />
+</LinearLayout>

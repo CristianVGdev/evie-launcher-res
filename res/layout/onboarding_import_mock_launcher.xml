@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.voxel.simplesearchlauncher.view.WindowInsetPolicyFrameLayout android:id="@id/main_layer" android:fitsSystemWindows="false" android:layout_width="fill_parent" android:layout_height="fill_parent" app:consumeBottom="false" app:consumeTop="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.voxel.simplesearchlauncher.view.RoundedFrameLayout android:fitsSystemWindows="false" android:layout_width="fill_parent" android:layout_height="fill_parent" app:vxl_radius="@dimen/card_corner_radius">
+        <ImageView android:id="@id/main_layer_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    </com.voxel.simplesearchlauncher.view.RoundedFrameLayout>
+    <FrameLayout android:id="@id/workspace" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5.0dip">
+        <com.voxel.launcher3.CellLayout android:id="@id/cell_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <com.voxel.simplesearchlauncher.view.WindowInsetPolicyFrameLayout android:id="@id/qsb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+        <com.voxel.simplesearchlauncher.view.SpringySearchView android:id="@id/qsb_search" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" app:iconifiedByDefault="false" app:queryHint="@string/search_bar_hint" app:voiceIcon="@drawable/homescreen_mic_icon" />
+    </com.voxel.simplesearchlauncher.view.WindowInsetPolicyFrameLayout>
+</com.voxel.simplesearchlauncher.view.WindowInsetPolicyFrameLayout>

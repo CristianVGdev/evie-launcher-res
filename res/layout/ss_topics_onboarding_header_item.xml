@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="@dimen/ss_base_spacing" android:paddingRight="@dimen/ss_base_spacing" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="85.0dip" android:layout_height="85.0dip" android:layout_marginTop="48.0dip" android:src="@drawable/onboarding_telescope" android:scaleType="fitCenter" />
+    <androidx.legacy.widget.Space android:layout_width="0.0dip" android:layout_height="19.0dip" />
+    <TextView android:textSize="20.0sp" android:textColor="@android:color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ss_topics_onboarding_title" android:paddingStart="30.0dip" android:paddingEnd="30.0dip" style="@style/SSTextStyleMedium" />
+    <androidx.legacy.widget.Space android:layout_width="0.0dip" android:layout_height="21.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/search_bar" android:background="@drawable/ss_topic_search_field_bg" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="50.0dip" android:layout_marginRight="50.0dip">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/search_button" android:layout_width="26.0dip" android:layout_height="26.0dip" android:src="@drawable/homescreen_search_icon" android:alpha="0.8" android:layout_marginStart="13.0dip" />
+        <TextView android:textSize="17.0sp" android:textColor="#ffadb6c0" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ss_personalize_search_hint" android:fontFamily="sans-serif-light" />
+    </LinearLayout>
+    <androidx.legacy.widget.Space android:layout_width="0.0dip" android:layout_height="20.0dip" />
+</LinearLayout>

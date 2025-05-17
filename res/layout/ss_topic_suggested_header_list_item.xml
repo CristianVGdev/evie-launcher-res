@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="start" android:id="@id/text" android:background="?selectableItemBackground" android:paddingLeft="@dimen/ss_double_spacing" android:paddingTop="@dimen/ss_base_spacing" android:paddingRight="@dimen/ss_double_spacing" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toStartOf="@id/deselect_button" android:layout_alignParentStart="true" style="@style/SSTopicHeaderItemTextAppearance" />
+    <TextView android:textColor="@color/evie_sky_blue" android:gravity="end" android:id="@id/deselect_button" android:background="?selectableItemBackground" android:paddingLeft="@dimen/ss_double_spacing" android:paddingTop="@dimen/ss_base_spacing" android:paddingRight="@dimen/ss_double_spacing" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ss_deselect_all" android:layout_alignParentEnd="true" style="@style/SSTopicHeaderItemTextAppearance" />
+</RelativeLayout>

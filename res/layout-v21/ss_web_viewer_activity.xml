@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.evie.sidescreen.webviewer.NestedWebView android:id="@id/webview" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/app_bar_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="0.0dip" app:elevation="0.0dip">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:layout_scrollFlags="enterAlways|scroll|snap">
+            <include layout="@layout/ss_toolbar" />
+            <View android:layout_gravity="bottom" android:background="@color/evie_medium_gray" android:layout_width="fill_parent" android:layout_height="@dimen/ss_toolbar_bottom_line_height" />
+            <ProgressBar android:layout_gravity="bottom" android:id="@id/progress" android:layout_width="fill_parent" android:layout_height="2.0dip" android:indeterminate="false" android:indeterminateOnly="false" android:progressDrawable="@drawable/ss_loading_progress" />
+        </FrameLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <include android:layout_gravity="bottom" android:id="@id/footer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/ss_topics_footer_bar" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

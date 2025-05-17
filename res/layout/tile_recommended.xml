@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/SSTileStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/ss_base_and_half_spacing" android:paddingTop="@dimen/ss_base_and_half_spacing" android:paddingRight="@dimen/ss_base_and_half_spacing" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/SSPosterTileTitleTextAppearance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ss_recommended_title" />
+        <TextView android:textAppearance="@style/SSTileSubtitleTextAppearance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ss_recommended_subtitle" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:id="@id/loading" android:layout_width="fill_parent" android:layout_height="240.0dip">
+        <include android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/tiles_loading_spinner" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="top" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/background" android:background="#88000000" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ScrollView android:id="@id/container" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:layout_width="fill_parent" android:layout_height="350.0dip" />
+            <LinearLayout android:orientation="vertical" android:background="@drawable/card_rounded_bg" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+                <ImageView android:layout_gravity="right" android:id="@id/close_button" android:clickable="true" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/upgrade_close_button" android:scaleType="center" />
+                <TextView android:textSize="14.0sp" android:textColor="#bc000000" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="VERSION 2.9" android:lineSpacingExtra="7.0sp" style="@style/TextStyleCircularMedium" />
+                <TextView android:textSize="20.0sp" android:textColor="@android:color/black" android:id="@id/subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:text="What's New?" style="@style/TextStyleCircularMedium" />
+                <include android:id="@id/search_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/upgrade_feature_section" />
+                <include android:id="@id/gestures" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/upgrade_feature_section" />
+                <include android:id="@id/feed" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/upgrade_feature_section" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff3bdab6" android:layout_gravity="right" android:id="@id/done_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="CLOSE" style="@style/TextStyleCircularMedium" />
+            </LinearLayout>
+            <View android:layout_width="fill_parent" android:layout_height="60.0dip" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

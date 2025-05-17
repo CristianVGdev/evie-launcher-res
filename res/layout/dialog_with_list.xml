@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/settings_list_item_row_padding_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/settings_list_item_row_padding_left" android:paddingEnd="@dimen/settings_list_item_row_padding_right"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/SettingsItemTextAppearance" android:textSize="20.0sp" android:id="@id/title_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="5.0dip" android:scaleType="center" />
+    <TextView android:textAppearance="@style/SettingsItemSubTextAppearance" android:textSize="15.0sp" android:id="@id/subtext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:scaleType="center" android:lineSpacingMultiplier="1.25" />
+    <ListView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

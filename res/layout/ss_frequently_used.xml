@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/ss_half_spacing" android:paddingBottom="@dimen/ss_half_spacing" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/ss_bg_rail_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/SSRailTitleTextAppearance" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ss_frequently_used_title" style="@style/SSRailTitleStyle" />
+        <TextView android:textAppearance="@style/SSRailSideTitleTextAppearance" android:id="@id/link" android:background="?selectableItemBackgroundBorderless" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ss_all_apps_link" android:layout_alignParentEnd="true" style="@style/SSRailTitleStyle" />
+    </RelativeLayout>
+    <include layout="@layout/ss_rail_divider" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/content" android:background="@drawable/ss_bg_rail_bottom" android:paddingLeft="@dimen/ss_half_spacing" android:paddingTop="@dimen/ss_slot_row_vertical_margin" android:paddingRight="@dimen/ss_half_spacing" android:paddingBottom="@dimen/ss_slot_row_vertical_margin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/ss_icon_text" />
+        <include layout="@layout/ss_icon_text" />
+        <include layout="@layout/ss_icon_text" />
+        <include layout="@layout/ss_icon_text" />
+        <include layout="@layout/ss_icon_text" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/content" android:background="@color/dark_theme_bg" android:paddingLeft="@dimen/ss_double_spacing" android:paddingRight="@dimen/ss_double_spacing" android:layout_width="fill_parent" android:layout_height="64.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/icon" android:layout_width="16.0dip" android:layout_height="16.0dip" app:actualImageScaleType="centerCrop" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent" app:placeholderImage="@android:color/transparent" app:roundedCornerRadius="@dimen/ss_topic_detail_logo_corner_radius" />
+    <FrameLayout android:id="@id/follow_button_container" android:layout_width="wrap_content" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <include android:id="@id/follow_button" android:layout_width="wrap_content" android:layout_height="fill_parent" layout="@layout/ss_follow_button" />
+    </FrameLayout>
+    <TextView android:textAppearance="@style/SSFollowItemTextAppearance" android:textSize="14.0sp" android:textColor="#ffdcdcdc" android:ellipsize="end" android:gravity="start|center" android:id="@id/label" android:layout_width="0.0dip" android:layout_height="0.0dip" android:lines="1" android:layout_marginStart="@dimen/ss_base_spacing" android:layout_marginEnd="@dimen/ss_base_spacing" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toRightOf="@id/icon" app:layout_constraintRight_toLeftOf="@id/follow_button_container" app:layout_constraintTop_toTopOf="parent" style="@style/SSTextStyleRegular" />
+</androidx.constraintlayout.widget.ConstraintLayout>

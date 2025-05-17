@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/SSTileStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_width="0.0dip" android:layout_height="0.0dip" app:cardCornerRadius="@dimen/ss_image_rounded_corner_radius" app:layout_constraintDimensionRatio="H,16:9" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+        <RelativeLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/image" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <LinearLayout android:orientation="vertical" android:id="@id/logo" android:background="@drawable/tile_gradient_top" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/logo_image" android:layout_width="fill_parent" android:layout_height="18.0dip" app:actualImageScaleType="fitCenter" />
+            </LinearLayout>
+            <com.evie.sidescreen.tiles.views.PercentageInsetView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/content" android:layout_alignParentBottom="true" app:insetTopMaximum="-12.0dip" app:insetTopPercent="-0.3" app:src="@drawable/tile_gradient_bottom" />
+            <LinearLayout android:orientation="vertical" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <TextView android:textAppearance="@style/SSHeroTileTitleInvertedTextAppearance" android:ellipsize="end" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="8.0dip" android:maxLines="2" />
+                <TextView android:textAppearance="@style/SSPosterTileFooterInvertedTextAppearance" android:id="@id/footer_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="8.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/summary" android:background="@drawable/tile_channel_summary_background" android:paddingLeft="8.0dip" android:paddingTop="3.0dip" android:paddingRight="8.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:layout_marginBottom="6.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+                <ImageView android:layout_gravity="center" android:id="@id/summary_icon" android:layout_width="10.0sp" android:layout_height="10.0sp" android:layout_marginRight="2.0dip" android:translationY="1.0dip" app:srcCompat="@drawable/ic_channel_story_stack" />
+                <TextView android:id="@id/summary_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/SSTileSummaryInvertedTextAppearance" />
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

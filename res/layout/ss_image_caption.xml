@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/content" android:paddingLeft="@dimen/ss_margin_side" android:paddingTop="@dimen/ss_margin_side" android:paddingRight="@dimen/ss_margin_side" android:paddingBottom="@dimen/ss_margin_side" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?android:selectableItemBackground" style="@style/SSTileStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/header" layout="@layout/tile_article_header" />
+    <TextView android:textSize="14.0sp" android:textColor="?tileTitleTextColor" android:id="@id/text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" app:layout_constraintTop_toBottomOf="@id/header" style="@style/SSTextStyleRegular" />
+</androidx.constraintlayout.widget.ConstraintLayout>

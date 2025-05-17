@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/search_bar" android:layout_width="fill_parent" android:layout_height="@dimen/ss_search_bar_height" android:layout_marginLeft="@dimen/ss_base_spacing" android:layout_marginTop="@dimen/ss_search_bar_margin" android:layout_marginRight="@dimen/ss_base_spacing"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/search_bar_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <ImageView android:layout_gravity="start|center" android:id="@id/icon" android:padding="@dimen/ss_search_bar_icon_padding" android:layout_width="@dimen/ss_search_bar_icon_size" android:layout_height="@dimen/ss_search_bar_icon_size" android:src="@drawable/homescreen_search_icon" android:scaleType="centerInside" android:translationY="-1.0dip" android:layout_marginStart="1.0dip" />
+    <TextView android:textSize="18.0sp" android:textColor="#ff313137" android:ellipsize="end" android:gravity="start|center" android:id="@id/text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/ss_search_bar_hint" android:maxLines="1" android:translationY="-1.0dip" android:fontFamily="sans-serif-light" android:layout_marginStart="45.0dip" />
+    <ImageView android:layout_gravity="end|center" android:id="@id/settings" android:padding="@dimen/ss_search_bar_icon_padding" android:layout_width="@dimen/ss_search_bar_icon_size" android:layout_height="@dimen/ss_search_bar_icon_size" android:src="@drawable/searchbar_settings_dark" android:scaleType="centerInside" android:translationY="-1.0dip" android:layout_marginEnd="1.0dip" />
+</FrameLayout>

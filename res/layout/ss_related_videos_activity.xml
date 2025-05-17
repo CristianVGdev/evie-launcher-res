@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/content_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:keepScreenOn="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" layout="@layout/ss_toolbar" />
+    <FrameLayout android:id="@id/youtube_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <fragment android:name="com.google.android.youtube.player.YouTubePlayerSupportFragment" android:id="@id/youtube_player_fragment" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/oath_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.aol.mobile.sdk.player.view.PlayerView android:layout_gravity="center" android:id="@id/oath_player_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <com.google.android.exoplayer2.ui.AspectRatioFrameLayout android:id="@id/exoplayer_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.google.android.exoplayer2.ui.PlayerView android:id="@id/simple_exoplayer_view" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" app:resize_mode="fit" app:surface_type="texture_view" app:use_controller="false" />
+    </com.google.android.exoplayer2.ui.AspectRatioFrameLayout>
+    <include android:id="@id/playback_controls" android:layout_width="fill_parent" android:layout_height="@dimen/ss_popup_video_viewer_playback_control_height" layout="@layout/ss_popup_video_viewer_playback_control" />
+    <FrameLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

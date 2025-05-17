@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.drawee.view.SimpleDraweeView android:id="@id/icon" android:background="?android:selectableItemBackgroundBorderless" android:layout_width="@dimen/ss_slot_icon_dimension" android:layout_height="@dimen/ss_slot_icon_dimension" android:layout_weight="1.0" android:layout_centerHorizontal="true" app:actualImageScaleType="centerInside" app:fadeDuration="0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

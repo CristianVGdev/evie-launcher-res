@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/list_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/half_spacing" android:layout_marginBottom="@dimen/half_spacing" style="@style/TextSubheader" />
+    <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/list_items" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

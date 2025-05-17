@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="number_of_items_selected">
+        <item quantity="other">vybráno %1$d</item>
+        <item quantity="one">vybráno %1$d</item>
+        <item quantity="few">vybráno %1$d</item>
+        <item quantity="many">vybráno %1$d</item>
+    </plurals>
+    <plurals name="number_of_reviews">
+        <item quantity="other">%1$d recenzí</item>
+        <item quantity="one">%1$d recenze</item>
+        <item quantity="few">%1$d recenze</item>
+        <item quantity="many">%1$d reviews</item>
+    </plurals>
+</resources>

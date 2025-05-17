@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/ss_margin_side" android:paddingBottom="@dimen/ss_margin_side" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?android:selectableItemBackground" style="@style/SSTileStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/ss_margin_side" android:paddingEnd="@dimen/ss_margin_side">
+        <TextView android:textAppearance="@style/SSPosterTileTitleTextAppearance" android:id="@id/headline" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="@style/SSTileSubtitleTextAppearance" android:id="@id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.evie.sidescreen.tiles.yelp.YelpActionContainer android:id="@id/action_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/ss_margin_side" android:paddingEnd="@dimen/ss_margin_side" />
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/exo_controller" android:background="@color/dark_theme_bg" android:fitsSystemWindows="false" android:layout_width="fill_parent" android:layout_height="@dimen/ss_popup_video_viewer_playback_control_height" android:paddingEnd="@dimen/ss_base_spacing"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="@dimen/ss_popup_video_viewer_playback_control_height" android:layout_height="@dimen/ss_popup_video_viewer_playback_control_height">
+        <ImageButton android:layout_gravity="center" android:id="@id/exo_play" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" style="@style/ExoMediaButton.Play" />
+        <ImageButton android:layout_gravity="center" android:id="@id/exo_pause" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" style="@style/ExoMediaButton.Pause" />
+    </FrameLayout>
+    <TextView android:textAppearance="@style/SSTextStyleRegular" android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/exo_position" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" />
+    <com.google.android.exoplayer2.ui.DefaultTimeBar android:id="@id/exo_progress" android:layout_width="0.0dip" android:layout_height="26.0dip" android:layout_weight="1.0" app:bar_height="2.0dip" app:buffered_color="#44ffffff" app:played_color="#ffffffff" app:scrubber_color="#ffffffff" app:unplayed_color="#44ffffff" />
+    <TextView android:textAppearance="@style/SSTextStyleRegular" android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/exo_duration" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" />
+    <FrameLayout android:layout_width="@dimen/ss_popup_video_viewer_playback_control_height" android:layout_height="@dimen/ss_popup_video_viewer_playback_control_height">
+        <ImageButton android:layout_gravity="center" android:id="@id/exo_enter_fullscreen_button" android:background="@android:color/transparent" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/icon_maximize_video" />
+        <ImageButton android:layout_gravity="center" android:id="@id/exo_exit_fullscreen_button" android:background="@android:color/transparent" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/icon_minimize_video" />
+    </FrameLayout>
+</LinearLayout>

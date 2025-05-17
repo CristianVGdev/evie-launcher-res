@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView app:cardCornerRadius="@dimen/button_card_corner_radius" style="@style/Card"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/button_image" android:layout_width="wrap_content" android:layout_height="@dimen/button_height" app:actualImageScaleType="centerCrop" app:placeholderImage="@color/placeholder" app:viewAspectRatio="1.77" />
+    <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="center_horizontal" android:layout_gravity="center" android:id="@id/button_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/half_spacing" android:layout_marginRight="@dimen/half_spacing" android:maxWidth="90.0dip" android:maxLines="2" android:textAllCaps="true" />
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_spacing" android:layout_marginBottom="@dimen/three_quarter_spacing"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/action_button_icon" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_centerHorizontal="true" app:placeholderImage="@color/placeholder" />
+    <TextView android:textAppearance="@style/TextContent" android:id="@id/action_button_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/half_spacing" android:text="Test" android:layout_below="@id/action_button_icon" android:layout_centerInParent="true" />
+</RelativeLayout>

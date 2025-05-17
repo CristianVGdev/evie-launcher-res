@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="@dimen/onboarding_import_pager_item_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/onboarding_import_mock" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/onboarding_import_pager_item_bottom_margin" android:scaleType="fitCenter" />
+    <ImageView android:id="@id/onboarding_import_icon" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

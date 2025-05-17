@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ff0c3048" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.voxel.simplesearchlauncher.view.TextureVideoView android:id="@id/video_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="60.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <include android:layout_gravity="center" android:id="@id/onboarding_spinner" android:visibility="invisible" android:layout_width="40.0dip" android:layout_height="40.0dip" android:alpha="0.0" layout="@layout/circular_progress_view_compat" />
+    </FrameLayout>
+</RelativeLayout>

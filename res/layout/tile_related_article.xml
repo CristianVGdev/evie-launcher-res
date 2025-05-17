@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/content" android:padding="@dimen/ss_margin_side" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?android:selectableItemBackground" style="@style/SSTileStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/tile_article_header" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/image" android:layout_width="@dimen/ss_tile_row_image_dimen" android:layout_height="@dimen/ss_tile_row_image_dimen" android:layout_alignParentTop="true" android:layout_alignParentEnd="true" fresco:actualImageScaleType="centerCrop" fresco:roundedCornerRadius="@dimen/ss_tile_row_image_corner_radius" />
+        <ImageView android:id="@id/play_button" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="23.0dip" android:src="@drawable/play_button" android:layout_alignParentTop="true" android:layout_marginEnd="23.0dip" android:layout_alignParentEnd="true" />
+        <TextView android:ellipsize="end" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:layout_marginBottom="8.0dip" android:maxLines="3" android:layout_toStartOf="@id/image" style="@style/SSPosterTileTitleTextAppearance" />
+        <TextView android:ellipsize="end" android:id="@id/subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:maxLines="2" android:layout_below="@id/title" android:layout_toStartOf="@id/image" style="@style/SSTileSubtitleTextAppearance" />
+    </RelativeLayout>
+</LinearLayout>

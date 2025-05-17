@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/search_bar" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/search_bar_icon" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginLeft="9.0dip" android:src="@drawable/ic_search_icon" android:translationY="-1.0dip" />
+    <TextView android:textSize="18.0sp" android:textColor="#ff313137" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/search_bar_query" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="45.0dip" android:layout_marginRight="@dimen/base_spacing" android:text="Search" android:maxLines="1" android:translationY="-1.0dip" android:fontFamily="sans-serif-light" />
+</FrameLayout>

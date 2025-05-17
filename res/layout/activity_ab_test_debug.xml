@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/ab_experiment_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="Experiment" style="@style/SettingsItemTextAppearance" />
+    <EditText android:id="@id/ab_experiment_text" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:id="@id/ab_group_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="Group" style="@style/SettingsItemTextAppearance" />
+    <EditText android:id="@id/ab_group_text" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <Button android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:text="OK" android:onClick="onOk" />
+</LinearLayout>

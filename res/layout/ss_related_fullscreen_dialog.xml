@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/exo_fullscreen_container" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.exoplayer2.ui.PlayerView android:id="@id/exo_fullscreen_player" android:layout_width="fill_parent" android:layout_height="fill_parent" app:surface_type="texture_view" app:use_controller="false" />
+    <include android:id="@id/fullscreen_controller" android:layout_width="fill_parent" android:layout_height="@dimen/ss_popup_video_viewer_playback_control_height" android:layout_alignParentBottom="true" layout="@layout/ss_popup_video_viewer_playback_control" />
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="top" android:id="@id/media_image" android:layout_width="fill_parent" android:layout_height="fill_parent" app:actualImageScaleType="centerCrop" app:placeholderImage="@color/placeholder" />
+    <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="bottom|center" android:id="@id/media_overlay" android:layout_width="@dimen/media_overlay_dimension" android:layout_height="@dimen/media_overlay_dimension" />
+    <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center" android:id="@id/media_video_button" android:layout_width="fill_parent" android:layout_height="fill_parent" app:actualImageScaleType="centerCrop" app:placeholderImage="@drawable/youtube_play_button" />
+    <com.evie.jigsaw.views.RichTextView android:textSize="11.0sp" android:textColor="#ccffffff" android:textColorLink="#ccffffff" android:layout_gravity="end|bottom|center" android:id="@id/media_attribution" android:background="@drawable/attribution_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/quarter_spacing" android:layout_marginBottom="@dimen/quarter_spacing" android:fontFamily="sans-serif-medium" />
+</FrameLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="134.0dip" style="@style/SSTileStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/loading_spinner" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/tiles_loading_spinner" />
+</FrameLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?android:selectableItemBackground" style="@style/SSTileStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/image" android:layout_width="@dimen/ss_tile_row_image_dimen" android:layout_height="@dimen/ss_tile_channel_row_image_height" android:layout_alignParentEnd="true" app:actualImageScaleType="centerCrop" app:roundedCornerRadius="@dimen/ss_tile_row_image_corner_radius" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/ss_base_and_half_spacing" android:layout_toStartOf="@id/image" android:layout_alignParentStart="true">
+        <TextView android:ellipsize="end" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" android:maxLines="4" style="@style/SSPosterTileTitleTextAppearance" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip">
+            <include android:id="@id/footer" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/tile_article_footer" />
+            <TextView android:ellipsize="none" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/spacer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="  ·  " android:maxLines="1" style="@style/SSTileHeaderTextAppearance" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/summary_icon" android:layout_width="10.0sp" android:layout_height="10.0sp" android:layout_marginRight="2.0dip" android:translationY="1.0dip" app:srcCompat="@drawable/ic_channel_story_stack_dark" />
+            <TextView android:layout_gravity="center_vertical" android:id="@id/summary_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/SSTileHeaderTextAppearance" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

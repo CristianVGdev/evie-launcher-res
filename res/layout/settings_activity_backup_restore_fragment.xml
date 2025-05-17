@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:background="@color/settings_activity_background" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:id="@id/sign_in" android:visibility="gone" layout="@layout/settings_activity_text_item" />
+            <include android:id="@id/backup" android:visibility="gone" layout="@layout/settings_activity_text_item" />
+            <include android:id="@id/restore" android:visibility="gone" layout="@layout/settings_activity_text_item" />
+            <include android:id="@id/delete" android:visibility="gone" layout="@layout/settings_activity_text_item" />
+            <include android:id="@id/google_account" android:visibility="gone" layout="@layout/settings_activity_text_item" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <include android:layout_gravity="center" android:id="@id/loading" android:layout_width="60.0dip" android:layout_height="60.0dip" layout="@layout/circular_progress_view_compat" />
+</FrameLayout>

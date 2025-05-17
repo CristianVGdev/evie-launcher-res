@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/search_bar" android:layout_width="fill_parent" android:layout_height="@dimen/ss_search_bar_height" android:layout_margin="16.0dip" android:layout_alignParentTop="true" layout="@layout/ss_vxl_search_view" />
+    <FrameLayout android:id="@id/search_results_container" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/search_bar" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/search_no_results" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/search_bar">
+        <ImageView android:layout_width="66.0dip" android:layout_height="66.0dip" android:layout_marginTop="39.0dip" android:src="@drawable/mag_icon_discover" />
+        <TextView android:textAppearance="@style/SSTextStyleMedium" android:textSize="17.0sp" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/ss_personalize_search_title" />
+        <TextView android:textAppearance="@style/SSTextStyleRegular" android:textSize="14.0sp" android:textColor="@color/grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/ss_personalize_search_subtitle" />
+    </LinearLayout>
+</RelativeLayout>

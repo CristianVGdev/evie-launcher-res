@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/SSTileStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="?tilesSecondaryBackground" android:layout_width="fill_parent" android:layout_height="16.0dip" />
+    <TextView android:textSize="14.0sp" android:textColor="?tileTitleTextColor" android:gravity="center|left" android:paddingLeft="@dimen/ss_margin_side" android:layout_width="fill_parent" android:layout_height="32.0dip" android:text="@string/ss_related_articles" style="@style/SSTextStyleRegular" />
+</LinearLayout>

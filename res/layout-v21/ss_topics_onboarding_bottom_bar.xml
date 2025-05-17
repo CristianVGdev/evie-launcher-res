@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="bottom" android:id="@id/bottom_bar_container" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:elevation="2.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:paddingLeft="@dimen/ss_base_spacing" android:paddingTop="11.0dip" android:paddingRight="@dimen/ss_base_spacing" android:paddingBottom="9.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0sp" android:textColor="@color/evie_medium_gray" android:gravity="center" android:layout_gravity="start|center" android:id="@id/skip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="40.0dip" android:text="@string/ss_skip" style="@style/SSTextStyleMedium" />
+        <TextView android:textSize="14.0sp" android:textColor="@android:color/white" android:layout_gravity="end|center" android:id="@id/button" android:background="@drawable/ss_button_background" android:paddingLeft="9.0dip" android:paddingTop="6.0dip" android:paddingRight="9.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/SSTextStyleMedium" />
+    </FrameLayout>
+    <View android:layout_gravity="top" android:background="@color/ss_rail_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</FrameLayout>
